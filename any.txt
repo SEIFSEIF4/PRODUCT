@@ -1,4 +1,0 @@
-  <section class="prices"></section>
-      <section class="FAQ"></section>
-      <section class="video"></section>
-      <section class="contact"></section>
