@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgb(114, 51, 162);
+}
+
+body {
+  font-family: "cairo", sans-serif;
+}
+
+header video {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+header .overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .logo {
+  padding-top: 2.5rem;
+}
+
+header .head {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header .text {
+  padding-top: 190px;
+}
+header .text h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  line-height: 46px;
+  color: rgb(85, 85, 85);
+}
+header .text p {
+  font-size: 18px;
+  line-height: 32px;
+  color: rgb(93, 93, 93);
+  margin-bottom: 3.125rem;
+}
+
+header .links a {
+  text-decoration: none;
+  padding: 1.375rem 3.4375rem;
+}
+
+header .links a:first-of-type {
+  color: white;
+  background-color: var(--main-color);
+  margin-left: 0.9375rem;
+  cursor: pointer;
+}
+
+header .links a:last-of-type {
+  color: var(--main-color);
+}
+
+header .product {
+  position: relative;
+  margin-bottom: 1.875rem;
+}
+
+header .product .product-image img {
+  width: 100%;
+}
+header .product .product-details img {
+  position: absolute;
+  top: -30px;
+  right: -40px;
+}
+header .product .product-details p,
+header .product .product-details span {
+  position: absolute;
+  top: 0px;
+  right: 12px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+}
+
+header .product .product-details span {
+  top: 33px;
+  right: 20px;
+}
+
+main section.features {
+  background-color: white;
+  padding: 4.375rem 0px;
+}
+main section.features .features-text h2 {
+  font-size: 2.25rem;
+  color: rgb(85, 85, 85);
+  line-height: 2rem;
+  padding-bottom: 2.8125rem;
+  position: relative;
+}
+
+main section.features .features-text h2::after {
+  content: "";
+  position: absolute;
+  width: 9.375rem;
+  height: 0.125rem;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  font-family: ar-font, sans-serif;
+}
+
+section.features .features-media .d-flex {
+  padding: 70px 0px;
+  border-bottom: 3px solid rgb(238, 238, 238);
+}
+
+section.features .features-media .d-flex img {
+  margin: 0 5rem;
+}
+
+section.features .features-media .d-flex h3 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: 3.125rem;
+  padding: 0px 1.5625rem;
+  border-right: 2px solid var(--main-color);
+}
+
+section.features .features-media .d-flex:nth-child(2n) h3 {
+  text-align: end;
+  border-right: 0;
+  border-left: 2px solid var(--main-color);
+}
+
+section.prices {
+  background-color: rgb(247, 247, 247);
+  padding: 3.125rem 0px 3.75rem;
+}
+
+section.prices .plan-card {
+  background-color: white;
+  margin-top: 100px;
+  color: rgb(172, 172, 172);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(237, 237, 237);
+  border-image: initial;
+  padding: 0.9375rem 0px;
+}
+
+section.prices .plan-card .title {
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+section.prices .plan-card h5 {
+  font-size: 3rem;
+  margin: 30px auto;
+}
+section.prices .plan-card h5 span {
+  font-size: 15px;
+  transform: translate(-69px, -10px);
+  display: block;
+}
+
+section.prices .plan-card ul {
+  padding: 0;
+}
+section.prices .plan-card ul li {
+  list-style: none;
+  font-size: 15px;
+  margin-bottom: 1.875rem;
+}
+
+section.prices .plan-card a {
+  text-decoration: none;
+  border: 2px solid;
+  border-image: initial;
+  padding: 0.625rem 2.5rem;
+  border-radius: 0px;
+  transition: all 0.5s ease 0s;
+  color: var(--main-color);
+  background-color: white;
+  display: inline-block;
+}
+
+section.prices .plan-card a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+section.prices .col-md-6:nth-child(3) .plan-card {
+  padding-top: 6.1875rem;
+  margin-top: 3.4375rem;
+}
+
+section.prices .col-md-6:nth-child(3) .plan-card a {
+  background-color: var(--main-color);
+  color: white;
+}
+
+section.FAQ {
+  background-color: white;
+  padding: 3.125rem 0px 3.75rem;
+}
+
+section.FAQ .FAQ-text {
+  font-size: 1.875rem;
+  color: rgb(85, 85, 85);
+  margin-bottom: 3.4375rem;
+}
+
+.accordion-button::after {
+  margin: 0 auto 0 0;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(235, 235, 235);
+  border-image: initial;
+  border-radius: 0px;
+}
+
+section.FAQ .accordion .accordion-item button {
+  font-size: 18px;
+  color: rgb(85, 85, 85);
+  font-weight: bold;
+}
+
+.accordion-body {
+  font-size: 15px;
+  color: rgb(201, 201, 201);
+  line-height: 24px;
+}
+
+section.video {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section.video video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.video .overlay {
+  background-color: rgba(130, 77, 178, 0.9);
+  min-height: 100%;
+  position: absolute;
+  inset: 0px;
+}
+
+section.video .overlay i {
+  display: block;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+  border-radius: 50%;
+  margin: 0px auto 45px;
+}
+
+section.video .overlay button {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  font-size: 30px;
+  color: white;
+  background-color: transparent;
+  transform: translate(50%, 50%);
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+}
+
+section.contact {
+  background-color: rgb(19, 19, 19);
+  padding: 3.75rem 0px 2.5rem;
+}
+section.contact h4 {
+  font-size: 1.125rem;
+  color: rgb(117, 133, 148);
+  line-height: 3.125rem;
+}
+section.contact form input,
+section.contact form textarea {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-size: 1.125rem;
+  line-height: 2.1875rem;
+  text-align: right;
+  width: 90%;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  color: rgb(174, 173, 173);
+  background-color: rgb(36, 36, 36);
+}
+section.contact button {
+  font-size: 1.125rem;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 3px;
+}
+
+section.contact button i {
+  margin-right: 0.9375rem;
+}
+
+section.contact form .invalid-feedback {
+  margin-bottom: 15px;
+}
+
+section.contact .blog h5 {
+  font-size: 18px;
+  color: rgb(174, 173, 173);
+  margin-bottom: 15px;
+}
+section.contact .blog p {
+  font-size: 0.9375rem;
+  line-height: 20px;
+  color: rgb(115, 115, 115);
+}
+
+.ms-3 {
+  margin-right: 1rem !important;
+}
+
+footer {
+  background-color: rgb(29, 29, 29);
+  padding: 25px 0px;
+}
+
+footer .list-inline .list-inline-item a {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.5s ease 0s;
+  color: rgb(29, 29, 29);
+  background-color: rgb(117, 133, 148);
+}
+
+footer .copyright p {
+  font-size: 15px;
+  color: rgb(145, 145, 145);
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  header .text {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .product {
+    margin-top: 100px;
+  }
+
+  header .product .product-details img {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  header .product .product-details p,header .product .product-details span {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  section.features  .d-flex {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  section.features  .d-flex img {
+    margin: 0 auto 50px;
+  }
+
+  section.features  .d-flex h3 {
+    border: none !important;
+  }
+
+  section.contact h4 {
+    margin-top: 1.5625rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .copyright p {
+    text-align: center;
+  }
+}
